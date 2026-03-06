@@ -6,6 +6,7 @@ const selectNo = route.params.no;
 import { ref, computed, onBeforeMount } from "vue";
 const user = ref({});
 
+//
 const findByNo = async (userNo) => {
   try {
     let info = await fetch(`/api/users/${userNo}`);
